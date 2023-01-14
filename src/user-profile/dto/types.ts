@@ -10,8 +10,12 @@ export type mealItem = {
   date: string;
 };
 
-export type orders = {
-  id: number;
-  cost: number;
-  title: string;
-};
+export type orders = [
+  {
+    userId: string;
+    id: string;
+    price: number;
+    title: string;
+    delivered: boolean;
+  },
+];

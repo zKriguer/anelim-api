@@ -22,7 +22,7 @@ export class ProductsService {
     return `This action returns a #${id} product`;
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} product`;
+  remove(id: string) {
+    return this.ProductsModel.deleteOne({ _id: id });
   }
 }

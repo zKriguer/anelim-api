@@ -84,7 +84,7 @@ export class UserProfileService {
       { $or: [{ _id: userId }, { name: boyFriendName }] },
       {
         $push: {
-          orders: [{ idPedido: ObjectId, pedidos: cartItems }],
+          orders: { idPedido: ObjectId, pedidos: cartItems },
         },
       },
     );

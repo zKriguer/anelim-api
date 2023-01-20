@@ -19,3 +19,12 @@ export type orders = [
     delivered: boolean;
   },
 ];
+
+export type Cart = {
+  userId: string;
+  id: string;
+  price: number;
+  title: string;
+  delivered: boolean;
+  image: string;
+};

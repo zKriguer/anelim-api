@@ -9,6 +9,9 @@ import * as dotenv from 'dotenv';
 import { CorsMiddleware } from '@nestjs/common';
 import { ProductsModule } from './products/products.module';
 dotenv.config();
+
+console.log(process.env.API_PASSWORD);
+
 @Module({
   imports: [
     MongooseModule.forRoot(
